@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pass.css">
-    <title>GENERATE PASSWORD</title>
+    <title>Generate Password</title>
 </head>
 <body>
     <div class="container">
-        <p id="p1">Generate a <div id="p12">random password</div></p>
+        <h1>Generate a <span class="highlight">random password</span></h1>
         <h4>Never use an insecure password again</h4>
-        <div>
-            <label for="length">Password Length: </label>
+        <div class="form-group">
+            <label for="length">Password Length:</label>
             <input type="number" id="length" min="1" max="100" value="15">
         </div>
-        <div>
+        <div class="form-group">
             <label>
                 <input type="checkbox" id="includeNumbers" checked>
                 Include Numbers
@@ -25,7 +25,7 @@
                 Include Symbols
             </label>
         </div>
-        <button id="Genz" onclick="generate()">Generate passwords</button>
+        <button id="Genz" onclick="generate()">Generate Passwords</button>    
         <div id="pass1" class="password-box" onclick="copyToClipboard('pass1')">Pass 1</div>
         <div id="pass2" class="password-box" onclick="copyToClipboard('pass2')">Pass 2</div>
     </div>
