@@ -6,7 +6,14 @@ let passIl = document.getElementById("pass2")
 
 
 function generate(){
-    for( let i = characters; i < characters.length; i++ ){
-        console.log(i)
+    let password1 =""
+    let password2 = ""
+    for (let i = 0; i < 15; i++) {
+        password1 += characters[Math.floor(Math.random() * characters.length)];
+        password2 += characters[Math.floor(Math.random() * characters.length)];
     }
+
+    passEl.textContent = password1;
+    passIl.textContent = password2;
+
 }
